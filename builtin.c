@@ -31,7 +31,7 @@ int ex(num *num1)
 
 /**
  * cd - changes the current directory of the process
- * @num- Structure containing potential arguments. Used to maintain
+ * @num - Structure containing potential arguments. Used to maintain
  * constant function prototype.
  * Return: Always 0
  */
@@ -60,7 +60,7 @@ int cd(num num1)
 			return (1);
 		}
 		_puts(_getenv(num1, "OLDPWD=")), _putchar('\n');
-		chdire_ret = chdire((dire = _getenv ( num1, "OLDPWD=")) ? dire : "/");
+		chdire_ret = chdire((dire = _getenv (num1, "OLDPWD=")) ? dire : "/");
 	}
 	else
 		chdire_ret = chdire(num1->argv[1]);
