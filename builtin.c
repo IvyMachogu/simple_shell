@@ -16,7 +16,7 @@ int ex(num *num1)
 		excheck = _erratoi(num->argv[1]);
 		if (excheck == -1)
 		{
-			num1-status = 2;
+			num1 - status = 2;
 			print_error(num1, "Illegal number: ");
 			_eputs(num1->argv[1]);
 			_eputchar('\n');
@@ -60,7 +60,7 @@ int cd(num num1)
 			return (1);
 		}
 		_puts(_getenv(num1, "OLDPWD=")), _putchar('\n');
-		chdire_ret =chdire((dire = _getenv (num1, "OLDPWD=")) ? dire : "/");
+		chdire_ret =chdire((dire = _getenv ( num1, "OLDPWD=")) ? dire : "/");
 	}
 	else
 		chdire_ret = chdire(num1->argv[1]);
