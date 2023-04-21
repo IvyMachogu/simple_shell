@@ -76,3 +76,21 @@ int cd(num num1)
 	}
 	return (0);
 }
+
+/**
+ * change - changes the current directory of the process
+ * num: Structure containing potential arguments. Used to maintain
+ * constant function prototype.
+ * Return: Always 0
+ */
+int change(num *num1)
+{
+	char **array;
+
+	array = num1->argv;
+	_puts("help call works. Function not yet implemented \n");
+	if (0)
+		_puts(*array);
+	return (0);
+}
+
